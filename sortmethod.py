@@ -6,7 +6,7 @@ from numbertrans import chineseToNumber
 
 def sortNames(arr):
     def changeToSort(item):
-        regChn = re.compile(r'([零|一|二|三|四|五|六|七|八|九|十|百]+)')
+        regChn = re.compile(r'([零|一|二|三|四|五|六|七|八|九|十|百|千|万|亿]+)')
         regNum = re.compile(r'([0-9]+)')
 
         if regNum.search(item) != None:
