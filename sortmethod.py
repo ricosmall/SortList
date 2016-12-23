@@ -19,6 +19,4 @@ def sortNames(arr):
 
         return itemnum
 
-    resultlist = sorted(arr, key=lambda item: changeToSort(item))
-
-    return resultlist
+    return sorted(arr, key=lambda item: changeToSort(item))
